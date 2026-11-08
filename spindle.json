@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "name": "Danny's Top Dock",
+  "identifier": "danny_topdock",
+  "author": "dantalionsama",
+  "github": "https://github.com/dantalionsama/danny_topdock",
+  "homepage": "https://github.com/dantalionsama/danny_topdock",
+  "permissions": ["chats", "chat_mutation"],
+  "entry_backend": "dist/backend.js",
+  "entry_frontend": "dist/frontend.js"
+}
