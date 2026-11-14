@@ -75,7 +75,7 @@ export function setup(ctx) {
   // ---- backend requests ----
   function ask(type, data = {}) {
     return new Promise((resolve, reject) => {
-      const requestId = crypto.randomUUID()
+      const requestId = 'r' + Date.now().toString(36) + Math.random().toString(36).slice(2, 10)
       const t = setTimeout(() => {
         pending.delete(requestId)
         reject(new Error('Timed out'))
